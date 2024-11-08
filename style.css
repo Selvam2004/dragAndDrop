@@ -1,0 +1,76 @@
+h3{
+    text-align: center;
+    background-color: #ccc;
+    padding: 20px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#drop-area {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+  #file-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  #file-table th, #file-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  #file-table th {
+    background-color: #f4f4f4;
+  }
+  #file-input {
+    display: none; 
+  }
+  .delete-button {
+    color: red;
+    cursor: pointer;
+  }
+#progress-container{
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  align-items: center;
+}
+   
+ 
+  .loaderBar {
+    width: calc(160px / 0.707);
+    height: 10px;
+    background: #F9F9F9;
+    border-radius: 10px;
+    border: 1px solid #006DFE;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .loaderBar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    background: repeating-linear-gradient(45deg, #0031F2 0 30px, #006DFE 0 40px) right/200% 100%;
+    width: var(--progress-width, 0%);  
+   }
+  
+
+  

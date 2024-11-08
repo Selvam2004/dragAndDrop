@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop File Upload</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h3>Drag and Drop</h3>
+
+<div id="drop-area">
+    Drag & Drop File Here or Click to Select File
+    <input type="file" id="file-input"/>
+  </div>
+  <div id="progress-container" style="width: 100%; display: none;">
+    <label for="progress-bar">Upload Progress:</label>
+    <div id="progress-bar"  class="loaderBar" value="0" max="100" style="width: 100%;"></div>
+  </div>
+  <table id="file-table">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Size (KB)</th>
+        <th>Type</th>
+        <th>Open</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody> 
+
+    </tbody> 
+  </table>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
